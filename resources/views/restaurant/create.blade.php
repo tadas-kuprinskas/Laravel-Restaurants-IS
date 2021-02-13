@@ -19,15 +19,15 @@
                        @csrf
                        <div class="form-group">
                             <label for="">{{ __('msg.title') }}: </label>
-                            <input type="text" name="title" class="form-control">
+                            <input type="text" name="title" value="{{old('title')}}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">{{ __('msg.customers') }}: </label>
-                            <input type="number" name="customers" class="form-control">
+                            <input type="number" name="customers" value="{{old('customers')}}" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="">{{ __('msg.employees') }}: </label>
-                            <input type="number" name="employees" class="form-control">
+                            <input type="number" name="employees" value="{{old('employees')}}" class="form-control">
                         </div>
                        <div class="form-group">
                            <label>{{ __('msg.menu') }}: </label>

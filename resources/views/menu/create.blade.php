@@ -19,19 +19,19 @@
                        @csrf
                        <div class="form-group">
                            <label>{{ __('msg.title') }}: </label>
-                           <input type="text" name="title" class="form-control">
+                           <input type="text" name="title" value="{{old('title')}}" class="form-control">
                        </div>
                        <div class="form-group">
                            <label>{{ __('msg.price') }}: </label>
-                           <input type="number" name="price" class="form-control"> 
+                           <input type="number" name="price" value="{{old('price')}}" class="form-control"> 
                        </div>
                        <div class="form-group">
                         <label>{{ __('msg.weight') }}: </label>
-                        <input type="number" name="weight" class="form-control"> 
+                        <input type="number" name="weight" value="{{old('weight')}}" class="form-control"> 
                     </div>
                     <div class="form-group">
                         <label>{{ __('msg.amount_of_meat') }}: </label>
-                        <input type="number" name="amount_of_meat" class="form-control"> 
+                        <input type="number" name="amount_of_meat" value="{{old('amount_of_meat')}}" class="form-control"> 
                     </div>
                        <div class="form-group">
                            <label>{{ __('msg.description') }}: </label>

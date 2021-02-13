@@ -11,7 +11,7 @@ ___
  :heavy_check_mark: Deleting Menu/Restaurant <br>
  :heavy_check_mark: Updating Menu/Restaurant <br> 
  :heavy_check_mark: Database (1:M relation) <br> 
- <img src="public/images/restaurantDb.png">
+ <img src="public/images/restaurantDb.png"> <br>
  :heavy_check_mark: Internationalism (EN and LT languages) <br> 
  :heavy_check_mark: Filtering restaurants by menu <br>
  :heavy_check_mark: Searching restaurants by name   

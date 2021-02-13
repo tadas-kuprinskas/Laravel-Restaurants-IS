@@ -11,10 +11,23 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
+    rel="stylesheet">
+   
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -39,7 +52,7 @@
                             <a href="{{ route('menu.index') }}" class="nav-link">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('restaurant.index') }}" class="nav-link">Restoranai</a>
+                            <a href="{{ route('restaurant.index') }}" class="nav-link">{{ __('msg.restaurant') }}</a>
                         </li>
                         @endauth
 
@@ -48,6 +61,10 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        
+                        <a href="{{ url('changelanguage/en') }}"><i class="flag flag-united-kingdom"></i></a>
+                        <a href="{{ url('changelanguage/lt') }}"><i class="flag flag-lithuania"></i></a>
+                      
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))

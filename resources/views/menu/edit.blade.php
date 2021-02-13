@@ -37,7 +37,7 @@
                             <label for="">{{ __('msg.description') }}</label>
                             <textarea id="mce" type="text" name="about" rows=10 cols=100 class="form-control">{!! $menu->about !!}</textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">{{ __('msg.change') }}</button>
+                        <button type="submit" class="btn btn-primary">{{ __('msg.change_the_information') }}</button>
                     </form>
                 </div>
             </div>
